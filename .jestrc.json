@@ -1,0 +1,19 @@
+{
+    "verbose": true,
+    "transform": {
+        "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "globals": {
+        "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+        "js",
+        "jsx"
+    ],
+    "setupFiles": [
+        "./src/test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+        "./node_modules/enzyme-to-json/serializer"
+    ]
+}
