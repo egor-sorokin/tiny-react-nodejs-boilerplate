@@ -1,8 +1,8 @@
 {
     "author": "Egor Sorokin",
-    "name": "frontend-boilerplate",
+    "name": "tiny-react-nodejs-boilerplate",
     "version": "1.0.0",
-    "description": "Frontend boilerplate v1.0",
+    "description": "Tiny react nodejs boilerplate v1.0",
     "scripts": {
         "build-dev": "DEV_MODE=true webpack",
         "build-prod": "webpack",
