@@ -46,6 +46,7 @@ It is included:
 
 ## API
 `API_DOCS.md` can be used for documenting API endpoints 
+`api-server.js` file is repsonsible for all back-end logic
 
 ## Useful docs
 - [React](https://reactjs.org/)
