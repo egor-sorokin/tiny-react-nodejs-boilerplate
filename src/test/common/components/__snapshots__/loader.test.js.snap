@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CenteredSpinner /> base tests matches snapshot 1`] = `
+<styled__SpinnerContainer>
+  <Spinner
+    delay={100}
+    invertColor={false}
+    isCompleting={false}
+    onComplete={[Function]}
+    size="large"
+  />
+</styled__SpinnerContainer>
+`;
