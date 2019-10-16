@@ -13,7 +13,7 @@ import { STRINGS_GREETINGS } from '../../common/services/strings';
 
 function useGreetings() {
     const [status, setStatus] = useState(STATUS_INITIALIZING);
-    const [errorMessage, setErrorMessage] = useState(null);
+    const [error, setError] = useState(null);
 
     const [allGreetings, setAllGreetings] = useState([]);
 
@@ -27,7 +27,7 @@ function useGreetings() {
         init().catch((err) => {
             console.log('err', err);
             setStatus(STATUS_ERROR);
-            setErrorMessage({ message: STRINGS_GREETINGS.LOAD_ERORR });
+            setError({ message: STRINGS_GREETINGS.LOAD_ERORR });
         });
     }, []);
 
@@ -54,7 +54,7 @@ function useGreetings() {
     return {
         status,
         isLoading,
-        errorMessage,
+        error,
 
         greetings
     };
