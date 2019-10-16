@@ -12,7 +12,7 @@ import Greetings from './components/Greetings';
 const Page = () => {
     const {
         isLoading,
-        errorMessage,
+        error,
 
         greetings
     } = useGreetings();
@@ -24,10 +24,10 @@ const Page = () => {
                     <CenteredSpinner/>
                 </CenteredSpinnerContainer>
             )}
-            {errorMessage && (
-                <SectionMessage appearance="error">{errorMessage}</SectionMessage>
+            {error && (
+                <SectionMessage appearance="error">{error.message}</SectionMessage>
             )}
-            {!isLoading && !errorMessage && (
+            {!isLoading && !error && (
                 <React.Fragment>
                     <h1>{STRINGS_PAGE.GREETINGS}</h1>
                     <Greetings greetings={greetings}/>
