@@ -13,7 +13,7 @@
     "dependencies": {
         "@atlaskit/section-message": "^4.1.1",
         "@atlaskit/spinner": "^12.1.1",
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "core-js": "3.3.2",
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.15.1",
